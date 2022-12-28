@@ -1,0 +1,611 @@
+@import url('https://fonts.googleapis.com/css2? family= Acme & display=swap');@import url('https://fonts.googleapis.com/css2? family= Acme & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFCFD2;
+}
+/*----------------------header---------------------*/
+header {
+    background-color:  #861657fa;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: black;
+    font-size: 60px;
+    font-style: italic;
+    margin: 0px 0px 10px 0px;
+    text-decoration: underline;
+    
+}
+
+
+header nav ul{
+    list-style: none;
+    font-size: 15px;
+    font-family: 'Acme', sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    text-align: right;
+    display: flex;
+    
+}
+
+.menu-nav ul li {
+    margin: 0px 20px;
+
+}
+
+
+
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*--------------------------MAIN--------------------*/
+
+.portada {
+    background: linear-gradient(rgba(0, 0, 0, 0.548),rgba(0, 0, 0, 0.521)), url(../img/lenceria-portadda.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+}
+.portada h2{
+    text-align: left;
+    font-size: 60px;
+    font-style: italic;
+    color: #861657;
+}
+.portada p{
+    text-align: left;
+    font-size: 35px;
+    font-family: 'Acme', sans-serif;
+    color: #861657;
+}
+
+.comienzo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+}
+.comienzo div{
+    width: 700px;
+    padding: 30px;
+}
+.comienzo div h2 {
+    padding: 20px;
+    text-decoration: underline;
+    font-size: 80px;
+    font-style: italic;
+    text-align: center;
+}
+.comienzo div p {
+    font-size:20px;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+}
+.comienzo img{
+    width: 350px;
+    border-radius: 100%;
+    transition: 1s;
+}
+.comienzo img:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+}
+
+.objetivo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    padding: 50px;
+}
+.objetivo div{
+    width: 700px;
+    padding: 30px;
+}
+.objetivo div h2 {
+    padding: 20px;
+    text-decoration: underline;
+    font-size: 80px;
+    font-style: italic;
+    text-align: center;
+
+}
+.objetivo div p {
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+    text-align: center;
+
+}
+.objetivo img{
+    width: 350px;
+    border-radius: 100%;
+    transition: 1s;
+}
+.objetivo img:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+}
+
+.productos{ 
+    display: flex;
+    justify-content: space-around;
+}
+.productos h3{
+    background-color: #86165781;
+    width: 300px;
+    text-align: center;
+    font-style: italic;
+    font-size: 40px;
+    position: absolute;
+}
+.productos div {
+    margin: 40px 15px;
+    position: relative;
+}
+.productos div img {
+    width: 300px;
+    height: 400px;
+    background-position: center;
+    box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.ubicacion h2{
+    padding: 20px;
+    text-decoration: underline;
+    font-size: 80px;
+    font-style: italic;
+    text-align: center;
+}
+
+
+
+
+
+/*-----------------------------------FOOTER------------------------------------*/
+
+footer{
+    margin-top: 20px ;
+    border-top: solid 3px #861657;
+    background-color: #a6425391;
+    font-family: 'Acme', sans-serif;
+} 
+footer div{
+    display: flex;
+    justify-content: end;
+
+}
+
+footer div img {
+    width: 40px;
+    height: 40px;
+    margin: 30px;
+}
+
+
+
+/*-----------------------------------index--------------------------------------*/
+
+/*---------------------------------------ENVIOS--------------------------------*/
+
+/*.envios h2 {
+    text-align: left;
+    font-size: 50px;
+    font-family: 'Acme', sans-serif;
+    margin: 20px 0px;
+    border: 4px solid #861657;
+
+}
+
+.envios div h3 {
+    font-size: 20px;
+    font-family: 'Acme', sans-serif;
+}
+
+.envios .flex-envios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.envios .flex-encuentro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.envios div img {
+    width: 200px;
+    height: 200px;
+}*/
+.flex-contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+.titulo-envios{
+    font-size: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+.flex-envios {
+    text-align: center;
+    margin-top: 30px;
+}
+.flex-envios h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.flex-envios img{
+    width: 300px;
+}
+
+.flex-encuentro{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.flex-encuentro h3{
+    font-size: 30px;
+    font-weight: bold;
+}
+.flex-encuentro img{
+    width: 300px;
+    margin-top: 30px;
+}
+.flex-encuentro p{
+    font-size: 30px;
+}
+
+/*-------------------------------------PRODUCTOS-----------------------------------*/
+/*--------.galeria {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.galeria div{
+    border: 2px solid #861657;
+    width: 254px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galeria div h3{
+    text-decoration: underline;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.galeria div p{
+    font-size: 15px;
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 5px;
+
+}
+
+.galeria img {
+    width: 250px;
+    height: 250px;
+
+}-----------------*/
+
+.galeria{
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-auto-rows: 300px;
+    gap: 30px;
+}
+
+.galeria div{
+    border: 2px solid #861657;
+    box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+    position: relative;
+    
+}
+
+.galeria div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.galeria div h3{
+    background-color: #861657a8;
+    color: #FFCFD2;
+    position: absolute;
+    bottom: 20px;
+}
+.galeria div p{
+    background-color: #861657a8;
+    color: #FFCFD2;
+    position: absolute;
+    bottom: 0px;
+}
+.img3-grid{
+    grid-row: span 2;
+}
+.img4-grid{
+    grid-column: span 2;
+}
+
+.img10-grid{
+    grid-row: span 2;
+}
+
+
+/*-------------------------------OFERTAS------------------------------*/
+.oferta {
+    display: flex;
+    justify-content: space-around;
+}
+.oferta div{
+    border: 2px solid #861657;
+    width: 254px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+}
+.oferta div h3{
+    background-color: #861657;
+    color: #FFCFD2;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 10px;
+}
+.oferta div p{
+    background-color: #861657;
+    color: #FFCFD2;
+    font-size: 15px;
+    font-family: 'Acme', sans-serif;
+    margin-bottom: 5px;
+}
+
+.oferta img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/*----------------------------CONTACTO----------------------------*/
+    .titulo-contacto{
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .form-contenedor{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .field-contenedor{
+        padding: 10px;
+        background-color: #8616575e;
+        border: solid 2px #861657;
+        font-size: 20px;
+        font-weight: 700;
+        width: 80%;
+    }
+
+    
+
+/*-----------------------------------------MEDIA QUARY-------------------------------------*/
+@media screen and (max-width:980px) {
+    .comienzo{
+        flex-direction: column;
+    }
+    .objetivo{
+        flex-direction: column;
+    }   
+}
+
+@media screen and (max-width:960px) {
+    .productos{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@Media screen and (max-width:920px){
+    header{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:900px) {
+    .galeria{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 250px;
+    }
+    .galeria div{
+        grid-row: span 1 ; 
+        grid-column: span 1;
+    }
+
+    
+}
+@media screen and (max-width:850px) {
+    .oferta{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%; 
+}
+
+}
+
+
+
+@media screen and (max-width:700px) {
+    .comienzo div{
+        width: 100%;
+    }
+    .objetivo div{
+        width: 100%;
+}
+}
+
+@media screen and (max-width:640px) {
+    .envios h2{
+        font-size: 40px;
+    }
+
+    
+}
+
+@media screen and (max-width:600px) {
+    .portada h2{
+        font-size: 50px; 
+        text-align: left;
+    }
+    .portada p{
+        font-size: 20px;
+        text-align: left;
+    }
+    .comienzo div h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    .comienzo div p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .objetivo div h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    .objetivo div p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+    .envios h2{
+        font-size: 30px;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-nav ul li{
+        margin: 5px;
+    }
+
+    header h1{
+        font-size: 50px ;
+        text-align: center;
+    }
+
+    .ubicacion h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+    }
+
+    .galeria div{
+        grid-row: span 1 ; 
+        grid-column: span 1;
+
+    }
+}
+
+@media screen and (max-width:460px) {
+    .comienzo div h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    .objetivo div h2{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:400px) {
+    .ubicacion iframe{
+        width: 100%;
+        align-items: center;
+    }
+    .productos div{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    footer div{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer div img{
+        margin: 0px;
+    }
+    .portada h2{
+        font-size: 40px;
+    }
+    .portada p{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width:390px) {
+    .envios h2{
+        font-size: 25px;
+    }
+    
+}
+
