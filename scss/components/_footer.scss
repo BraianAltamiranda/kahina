@@ -1,0 +1,23 @@
+/*-----------BODY---------------*/
+body{
+    background-color: nth($colores, 6 );
+}
+
+footer{
+    margin-top: 20px ;
+    border-top: solid 3px nth($colores, 5 );
+    background-color: nth($colores, 4 );
+    font-family: 'Acme', sans-serif;
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img{
+            width: 45px;
+            height: 45px;
+            margin: 30px;
+        }
+    }
+}

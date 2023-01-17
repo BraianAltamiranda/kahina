@@ -1,0 +1,216 @@
+/*-----------------------------------------MEDIA QUARY-------------------------------------*/
+@media screen and (max-width:980px) {
+    main .comienzo{
+        flex-direction: column;
+    }
+    main .objetivo{
+        flex-direction: column;
+    }   
+
+    .galeria{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 250px;
+    }
+    .galeria .img3-grid {
+        grid-row: span 1;
+    }
+    .galeria .img4-grid{
+        grid-column: span 1;
+    }
+    .galeria .img10-grid{
+        grid-row: span 1;
+    }
+
+}
+
+@media screen and (max-width:960px) {
+    main .productos{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:920px){
+    header{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:900px) {
+    .galeria{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 250px;
+    }
+    .galeria div{
+        grid-row: span 1 ; 
+        grid-column: span 1;
+    }
+
+    
+}
+@media screen and (max-width:850px) {
+    .oferta{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%; 
+        padding: 20px;
+}
+    .oferta div{
+        width: 100%;
+    }
+
+    .flex-contenedor{
+        padding: 20px;
+    }
+    .flex-contenedor .flex-encuentro p{
+        font-size: 25px;
+    }
+}
+
+@media  screen and (max-width:750px){
+    .flex-contenedor{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+
+@media screen and (max-width:700px) {
+    main .comienzo div{
+        width: 100%;
+    }
+    main .objetivo div{
+        width: 100%;
+}
+}
+
+@media screen and (max-width:640px) {
+    .envios h2{
+        font-size: 40px;
+    }
+
+    
+}
+
+@media screen and (max-width:600px) {
+    main .portada h2{
+        font-size: 50px; 
+        text-align: left;
+    }
+    main .portada p{
+        font-size: 20px;
+        text-align: left;
+    }
+    main .comienzo div h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    main .comienzo div p{
+        font-size: 15px;
+        text-align: center;
+    }
+    main .objetivo div h2{
+        font-size: 60px;
+        text-align: center;
+    }
+    main .objetivo div p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:520px) {
+    .envios h2{
+        font-size: 30px;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    header nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-nav ul li{
+        margin: 5px;
+    }
+
+    header h1{
+        font-size: 50px ;
+        text-align: center;
+    }
+
+    main .ubicacion h2{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px;
+    }
+
+    .galeria div{
+        grid-row: span 1 ; 
+        grid-column: span 1;
+
+    }
+
+    .envios .titulo-envios{
+        font-size: 25px;
+    }
+
+    .flex-contenedor .flex-encuentro p{
+        font-size: 20px;
+    }
+
+    .titulo-contacto{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    main .comienzo div h2{
+        font-size: 40px;
+        text-align: center;
+    }
+    main .objetivo div h2{
+        font-size: 40px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:400px) {
+    main .ubicacion iframe{
+        width: 100%;
+        align-items: center;
+    }
+    main .productos div{
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    footer div{
+        flex-direction: column;
+        align-items: center;
+    }
+    footer div img{
+        margin: 0px;
+    }
+    main .portada h2{
+        font-size: 40px;
+    }
+    main .portada p{
+        font-size: 15px;
+    }
+    
+}
+@media screen and (max-width:390px) {
+    .envios h2{
+        font-size: 25px;
+    }
+    
+}

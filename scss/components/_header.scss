@@ -1,0 +1,36 @@
+/*-----------BODY---------------*/
+body{
+    background-color: nth($colores, 6 );
+}
+
+header{
+    nav{
+        background-color: nth($colores , 4 );
+        padding: 20px;
+        .container-fluid{
+            .navbar-brand{
+                    font-size: 60px;
+                    text-decoration: underline;
+                    padding-right: 20px;
+                    color: nth($colores, 5 );
+
+            }
+            a{
+                font-size: nth($fuente, 2 );
+                font-weight: bold;
+                font-family: 'Acme', sans-serif;
+                color: nth($colores, 5 );
+            }
+            .navbar-toggler{
+                border-color: nth($colores, 7 );
+            }
+        }
+    }
+    form .btn{
+        color: nth($colores, 4 );
+        background-color: nth($colores, 5 );
+        &:hover{
+            color: black;
+        }
+    }
+}
