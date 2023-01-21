@@ -1,0 +1,14 @@
+@mixin font ($tamano, $ancho, $estilo, $color, $texto){
+    font-size: $tamano;
+    font-weight: $ancho;
+    font-style: $estilo;
+    color: $color;
+    text-align: $texto;
+}
+
+@mixin flex ($flexin, $content, $items){
+    display: $flexin;
+    justify-content: $content;
+    align-items: $items;
+    
+}

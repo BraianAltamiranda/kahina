@@ -1,12 +1,12 @@
 /*-----------BODY---------------*/
 body{
-    background-color: nth($colores, 6 );
+    background-color: nth($colores, 5 );
 }
 
 footer{
-    margin-top: 20px ;
-    border-top: solid 3px nth($colores, 5 );
-    background-color: nth($colores, 4 );
+    width: 100%;
+    border-top: solid 5px #83B692;
+    background-color: nth($colores, 7 );
     font-family: 'Acme', sans-serif;
 
     div{
@@ -17,7 +17,11 @@ footer{
         img{
             width: 45px;
             height: 45px;
-            margin: 30px;
+            margin: 10px 30px;
+            transition: all 0.5s ease;
+            &:hover{
+                transform: scale(1.2);
+            }
         }
     }
 }

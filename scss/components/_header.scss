@@ -1,36 +1,42 @@
 /*-----------BODY---------------*/
 body{
-    background-color: nth($colores, 6 );
+    background-color: nth($colores, 5 );
 }
 
 header{
     nav{
-        background-color: nth($colores , 4 );
-        padding: 20px;
+        background-color: nth($colores , 7 );
+        padding: 10px;
+        border-bottom: 5px solid #83B692;
         .container-fluid{
             .navbar-brand{
-                    font-size: 60px;
-                    text-decoration: underline;
-                    padding-right: 20px;
-                    color: nth($colores, 5 );
-
+                font-size: 60px;
+                font-family: 'Vollkorn', serif;
+                font-weight: 600;
+                padding-right: 50px;
+                color: black;
             }
-            a{
-                font-size: nth($fuente, 2 );
-                font-weight: bold;
-                font-family: 'Acme', sans-serif;
-                color: nth($colores, 5 );
-            }
-            .navbar-toggler{
-                border-color: nth($colores, 7 );
+            #navbarSupportedContent{
+                ul{
+                    li{
+                        a{
+                            font-size: 20px;
+                            font-style: italic;
+                            font-family: 'Vollkorn', serif;
+                            color: black;
+                            padding: 0px 20px;
+                        }
+                    }
+                }
             }
         }
     }
     form .btn{
-        color: nth($colores, 4 );
-        background-color: nth($colores, 5 );
+        color: black;
+        background-color: nth($colores, 4 );
         &:hover{
-            color: black;
+            background-color: nth($colores, 6 );
+            color: white;
         }
     }
 }
