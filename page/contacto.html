@@ -52,28 +52,61 @@
     </header>
     <main>
         <section>
-            <h2 class="titulo-contacto">nos contactamos en breve</h2>
             <form class="form-contenedor">
-                <fieldset class="field-contenedor">
-                    <div>
-                        <label for="nombre">Nombre y apellido:</label>
-                        <input type="text" id="nombre">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="well well-sm">
+                                <form class="form-horizontal" method="post">
+                                    <fieldset>
+                                        <legend class="text-center header">Contacta con nosotros</legend>
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <img src="../img/contacto.png" alt="contacto">
+                                                <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <img src="../img/contacto.png" alt="contacto">
+                                                <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <img src="../img/email.png" alt="email">
+                                                <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <img src="../img/llamada.png" alt="Telefono">
+                                                <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                            <div class="col-md-8">
+                                                <img src="../img/escribir.png" alt="mensaje">
+                                                <textarea class="form-control" id="message" name="message" placeholder="Ingrese su mensaje para nosotros aqui. Nos pondremos en contacto." rows="2"></textarea>
+                                            </div>
+                                        </div>
+                
+                                        <div class="form-group text-center">
+                                            <div class="col-md-12">
+                                                <button type="submit" class="btn btn-primary btn-lg ">enviar</button>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-
-                    <div>
-                        <label for="Teleffono">Telefono (opcional):</label>
-                        <input type="text" id="Teleffono">
-                    </div>
-
-                    <div>
-                        <label for="correo">Email</label>
-                        <input type="email" id="correo" > 
-                    </div>
-                    <div>
-                        <h2>Mensaje (opcional)</h2>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </div>
-                </fieldset>
+                </div>
             </form>
             
         </section>

@@ -1,31 +1,76 @@
 /*-----------BODY---------------*/
 body{
-    background-color: nth($colores, 5 );
+    background-color: nth($colores, 1 );
 }
 /*------------------INICIO-----------------*/
 
 main{
-
-    .portada{
-        background: linear-gradient(rgba(0, 0, 0, 0.548),rgba(0, 0, 0, 0.521)), url(../img/lenceria-portadda.jpeg);
-        background-position: center;
-        background-size: cover;
+    .carusel{
+        .carousel.slide{
+            .carousel-inner{
+                width: 100%;
+                height: 80vh;
+                img{
+                    height: 80vh;
+                    object-fit: cover;
+                }
+                div{
+                    h5{
+                        @include font (40px, 600, italic, white, center);
+                        font-family: 'Poppins', sans-serif;
+                    }
+                    p{
+                        @include font (20px, 300, italic, white, center);
+                        font-family: 'Poppins', sans-serif;
+                    }
+                    }
+                }
+            }
+        }
+    .productos{
+        @include flex (flex, space-around, center);
         width: 100%;
         height: 80vh;
-        
-        h1{
-            @include font (60px, bold, italic, black, left);
-            font-family: 'Vollkorn', serif;
-            padding-left: 20px
+        margin-top: 5px;
+            .productos-overlay{
+                display: flex;
+                flex-direction: column-reverse;
+                margin: 20px 10px;
+                position: relative;
+                width: 350px;
+                height: 400px;
+                overflow: hidden;
+                border: 1px solid nth($colores, 3 );
+                border-radius: 10px;
+                &:hover .capa{
+                    transform: scale(1);
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                background-position: center;
+                object-fit: cover;
+            }
+            .capa{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #aa162a38;
+                @include flex (flex, center, center);
+                transform: scale(0);
+                transition: all 0.5s ease;
+                h3{
+                    @include font (40px, 0, italic, white, center);
+                    width: 300px;
+                    font-family: 'Vollkorn', serif;
+                    position: absolute;
+                    
+                }
+            }
         }
-
-        p{
-            @include font (30px, 0, italic, black, left);
-            font-family: 'Vollkorn', serif;
-            padding-left: 20px;
-        }
-    }
-
     .comienzo{
         @include flex (flex, space-around, center);
         padding: 30px;
@@ -33,13 +78,11 @@ main{
         div{
             width: 70%;
             padding: 40px;
-            background-color: nth($colores, 6 );
             border-radius: 30px;
 
             h2{
                 @include font (60px, 0, italic, black, center);
-                padding: 20px;
-                text-decoration: underline;
+                padding: 10px;
                 font-family: 'Vollkorn', serif;
             }
 
@@ -55,9 +98,9 @@ main{
             transition: 1s;
             &:hover{
                 transform: scale(1.1);
-                box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
-                -webkit-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
-                -moz-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 12px -1px rgba(0, 0, 0, 0.548);
+                -webkit-box-shadow: 10px 10px 12px -1px rgba(0, 0, 0, 0.452);
+                -moz-box-shadow: 10px 10px 12px -1px rgba(0, 0, 0, 0.459);
             }
         }
     }
@@ -70,14 +113,12 @@ main{
         div{
             width: 70%;
             padding: 40px;
-            background-color: nth($colores, 6 );
             border-radius: 30px;
 
             h2{
                 @include font (60px, 0, italic, black, center);
                 font-family: 'Vollkorn', serif;
-                padding: 20px;
-                text-decoration: underline;
+                padding: 10px;
             }
 
             p{
@@ -92,58 +133,12 @@ main{
             transition: 1s;
             &:hover{
                 transform: scale(1.1);
-                box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
-                -webkit-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
-                -moz-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
+                box-shadow: 10px 10px 12px -1px rgba(0, 0, 0, 0.459);
+                -webkit-box-shadow: 10px 10px 12px -1px rgba(0, 0, 0, 0.486);
+                -moz-box-shadow: 10px 10px 12px -1px rgba(0, 0, 0, 0.432);
             }
         }
     }
-
-    .productos{
-        @include flex (flex, space-around, center);
-        width: 100%;
-        height: 80vh;
-        margin-top: 5px;
-
-        .productos-overlay{
-            display: flex;
-            flex-direction: column-reverse;
-            margin: 20px 10px;
-            position: relative;
-            width: 350px;
-            height: 450px;
-            overflow: hidden;
-            border: 4px solid nth($colores, 6 );
-            border-radius: 10px;
-            &:hover .capa{
-                transform: scale(1);
-            }
-            }
-            img{
-                width: 100%;
-                height: 100%;
-                background-position: center;
-                object-fit: cover;
-            }
-            .capa{
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background: nth($colores, 8 );
-                @include flex (flex, center, center);
-                transform: scale(0);
-                transition: all 0.5s ease;
-                h3{
-                    @include font (40px, 0, italic, black, center);
-                    width: 300px;
-                    font-family: 'Vollkorn', serif;
-                    position: absolute;
-                    
-                }
-            }
-        }
 
     .ubicacion{
         display: flex;
@@ -309,27 +304,28 @@ main{
         }
 
 /*-----------------Contactos----------------*/
-.titulo-contacto{
-    @include font (40px, 600, italic, black, center);
-    font-family: 'Acme', sans-serif;
-    text-decoration: underline;
-}
-.form-contenedor{
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-    .field-contenedor{
+main{
+    fieldset{
+        text-align: -webkit-center;
+        legend{
+            color: #83B692;
+            font-size: 27px;
             padding: 10px;
-            background-color: nth($colores, 8 );
-            border: solid 3px nth($colores, 6 );
-            @include font (20px, 600, italic, black, center);
-            font-family: 'Acme', sans-serif;
-            width: 50%;
-            h2{
-                font-size: nth($fuente, 2 ) ;
+        }
+    }
+    .form-group{
+        .col-md-8{
+            display: flex;
+            margin: 20px;
+
+            img{
+                width: 35px;
+                height: 35px;
             }
+        }
     }
 }
+
 
 
 

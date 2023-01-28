@@ -1,17 +1,17 @@
 /*-----------BODY---------------*/
 body{
-    background-color: nth($colores, 5 );
+    background-color: nth($colores, 1 );
 }
 
 header{
     nav{
-        background-color: nth($colores , 7 );
+        background-color: nth($colores , 1 );
         padding: 10px;
-        border-bottom: 5px solid #83B692;
+        border-bottom: 2px solid nth($colores, 3 );
         .container-fluid{
             .navbar-brand{
-                font-size: 60px;
-                font-family: 'Vollkorn', serif;
+                font-size: 45px;
+                font-family: 'Poppins', sans-serif;
                 font-weight: 600;
                 padding-right: 50px;
                 color: black;
@@ -22,7 +22,7 @@ header{
                         a{
                             font-size: 20px;
                             font-style: italic;
-                            font-family: 'Vollkorn', serif;
+                            font-family: 'Poppins', sans-serif;
                             color: black;
                             padding: 0px 20px;
                         }
@@ -32,11 +32,11 @@ header{
         }
     }
     form .btn{
-        color: black;
-        background-color: nth($colores, 4 );
+        color: white;
+        background-color: black;
         &:hover{
-            background-color: nth($colores, 6 );
-            color: white;
+            background-color: nth($colores , 1 );
+            color: black;
         }
     }
 }

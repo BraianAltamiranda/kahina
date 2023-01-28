@@ -1,13 +1,13 @@
 /*-----------BODY---------------*/
 body{
-    background-color: nth($colores, 5 );
+    background-color: nth($colores, 1 );
 }
 
 footer{
     width: 100%;
-    border-top: solid 5px #83B692;
-    background-color: nth($colores, 7 );
+    background-color: nth($colores, 3 );
     font-family: 'Acme', sans-serif;
+    margin-top: 20px;
 
     div{
         display: flex;
