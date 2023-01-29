@@ -164,7 +164,7 @@ main{
     grid-auto-rows: 300px;
     gap: 30px;
     div{
-        border: 3px solid nth($colores, 6 );
+        border: 2px solid nth($colores, 3 );
         border-radius: 6px;
         box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
         -webkit-box-shadow: 10px 10px 12px -1px rgba(0,0,0,0.75);
@@ -183,20 +183,20 @@ main{
         }
         
         h3{
-            @include font (30px, 0, italic, black, center);
-            background-color: nth($colores, 8 );
+            @include font (30px, 0, italic, white, center);
+            background-color: #aa162a73;
             position: absolute;
             bottom: 35px;
-            font-family:'Vollkorn', serif;
+            font-family:'Poppins', sans-serif;
             width: 100%;
         }
         
         p{
-            @include font (20px, 0, italic, black, center);
-            background-color: nth($colores, 8 );
+            @include font (20px, 0, italic, white, center);
+            background-color: #aa162a73;
             position: absolute;
             bottom: -5px;
-            font-family: 'Vollkorn', serif;
+            font-family: 'Poppins', sans-serif;
             width: 100%;
         }
         }
@@ -223,7 +223,7 @@ main{
     }
 
     div{
-        border: 3px solid nth($colores, 6 );
+        border: 2px solid nth($colores, 3 );
         border-radius: 5px;
         width: 300px;
         margin: 30px;
@@ -239,69 +239,75 @@ main{
         -moz-box-shadow: 10px 10px 12px -1px rgba(0, 0, 0, 0.445);
         }
         h3{
-            @include font (30px, 600, italic, black, center);
-            background-color: nth($colores, 8 );
-            width: 100%;
+            @include font (25px, 600, italic, black, center);
+            font-family:'Poppins', sans-serif;
+            text-decoration: underline;
         }
         
         p{
-            @include font (15px, bold, italic, rgb(75, 75, 75), left);
-            background-color: nth($colores, 8 );
-            width: 100%;
-            font-family: 'Acme', sans-serif;
+            @include font (15px, bold, italic, rgb(75, 75, 75), center);
+            font-family: 'Poppins', sans-serif;
         }
         span{
-            @include font (15px, bold, italic, rgb(75, 75, 75), left);
-            background-color: nth($colores, 8 );
-            font-family: 'Acme', sans-serif;
-            width: 100%;
-
-
+            @include font (15px, bold, italic, rgb(75, 75, 75), center);
+            font-family: 'Poppins', sans-serif;
         }
     }
 }
 /*-----------------ENVIOS----------------------*/
-.envios{
-    .titulo-envios{
-        @include font (40px, 600, italic, black, center);
-        text-decoration: underline;
-        font-family: 'Acme', sans-serif;
-    }
-    }
-.flex-contenedor{
-    @include flex (flex, space-around, center);
-        .flex-envios{
-            @include font (15px, 600, italic, black, center);
-            font-family: 'Acme', sans-serif;
-            margin-top: 30px;
-            h3{
-                font-size: 30px;
-                font-weight: bold;
-                color: black;
-            }
-            }
-            img{
-                width: 300px;
-            }
-        .flex-encuentro{
-            @include font (15px, 600, italic, black, center);
-            font-family: 'Acme', sans-serif;
-            margin-top: 30px;
-            h3{
-                font-size: 30px;
-                font-weight: bold;
-                color: black;
-            }
-            img{
-                width: 300px;
-                margin-top: 30px;
-            }
-            p{
-                font-size: 20px;
-                color: rgb(58, 58, 58);
-            }
-            }    
+main{
+    .envios-contenedor{
+        h1{
+            @include font(30px,600,italic,white,center);
+            font-family:'Poppins', sans-serif;
+            background-color: #aa1629;
+            margin-bottom: 20px;
         }
+        .envios-flex{
+            @include flex(flex, space-around, center);
+            text-align: center;
+            .envios{
+                width: 100%;
+                height: 100%;
+                margin: 20px;
+                padding: 30px;
+                border: 2px solid #aa162a;
+                img{
+                    color: white;
+                    width: 80px;
+                    height: 80px;
+
+                }
+                h2{
+                    @include font(20px,600,italic,black,center);
+                    font-family:'Poppins', sans-serif;
+                    margin-top: 15px;
+                    padding: 5px;
+                    text-decoration: underline
+                }
+                p{
+                    @include font(15px,600,none,rgba(0, 0, 0, 0.767),center);
+                    font-family:'Poppins', sans-serif;
+                    span{
+                        @include font(18px,bold,italic,black,center);
+                        font-family:'Poppins', sans-serif;
+                    }
+                }
+            }
+        }
+    }
+    .envios-img{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin: 20px;
+        img{
+            width: 500px;
+            height: 180px;
+            filter: grayscale(1);
+        }
+    }
+}
 
 /*-----------------Contactos----------------*/
 main{
