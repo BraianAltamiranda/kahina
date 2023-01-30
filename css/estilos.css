@@ -292,7 +292,7 @@ main .ubicacion {
       text-align: center;
       font-family: 'Poppins', sans-serif; }
 
-/*-----------------ENVIOS----------------------*/
+/*-----------------INFORMACION----------------------*/
 main .envios-contenedor h1 {
   font-size: 30px;
   font-weight: 600;
@@ -344,7 +344,7 @@ main .envios-contenedor .envios-flex {
         font-family: 'Poppins', sans-serif; }
 
 main .envios-img {
-  width: 100%;
+  width: 98%;
   height: 100%;
   text-align: center;
   margin: 20px; }
@@ -374,20 +374,104 @@ body {
 
 footer {
   width: 100%;
-  background-color: #aa1629;
-  font-family: 'Acme', sans-serif;
-  margin-top: 20px; }
-  footer div {
+  height: 100%; }
+  footer .primer-footer {
     display: flex;
-    justify-content: center;
-    align-items: center; }
-    footer div img {
-      width: 45px;
-      height: 45px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 30px 80px; }
+    footer .primer-footer .items {
+      width: 100%;
+      height: 100%;
+      margin: 20px;
+      padding: 30px;
+      display: flex;
+      align-items: center; }
+      footer .primer-footer .items img {
+        width: 50px;
+        height: 50px; }
+      footer .primer-footer .items h2 {
+        font-size: 20px;
+        font-weight: 600;
+        font-style: italic;
+        color: rgba(0, 0, 0, 0.692);
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        margin-top: 15px;
+        padding: 5px;
+        text-decoration: underline; }
+  footer .segundo-footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    background-color: #aa1629;
+    width: 100%; }
+    footer .segundo-footer .navegacion {
+      display: flex;
+      flex-direction: column; }
+      footer .segundo-footer .navegacion h2 {
+        font-size: 15px;
+        font-weight: 600;
+        font-style: italic;
+        color: white;
+        text-align: center;
+        text-decoration: underline;
+        margin-bottom: 10px; }
+      footer .segundo-footer .navegacion a {
+        font-size: 15px;
+        font-weight: 300;
+        font-style: italic;
+        color: white;
+        text-align: left;
+        text-decoration: none; }
+    footer .segundo-footer .maps h2 {
+      font-size: 15px;
+      font-weight: 600;
+      font-style: italic;
+      color: white;
+      text-align: center;
+      text-decoration: underline; }
+    footer .segundo-footer .maps iframe {
+      width: 150px;
+      height: 150px; }
+    footer .segundo-footer .ing h2 {
+      font-size: 15px;
+      font-weight: 600;
+      font-style: italic;
+      color: white;
+      text-align: center;
+      text-decoration: underline; }
+    footer .segundo-footer .ing img {
+      width: 30px;
+      height: 30px;
       margin: 10px 30px;
       transition: all 0.5s ease; }
-      footer div img:hover {
+      footer .segundo-footer .ing img:hover {
         transform: scale(1.2); }
+    footer .segundo-footer .telefono h2 {
+      font-size: 15px;
+      font-weight: 600;
+      font-style: italic;
+      color: white;
+      text-align: center;
+      text-decoration: underline; }
+    footer .segundo-footer .telefono .numero {
+      display: flex;
+      align-items: end; }
+      footer .segundo-footer .telefono .numero img {
+        width: 30px;
+        height: 30px;
+        margin: 10px 10px;
+        transition: all 0.5s ease; }
+        footer .segundo-footer .telefono .numero img:hover {
+          transform: scale(1.2); }
+      footer .segundo-footer .telefono .numero p {
+        font-size: 15px;
+        font-weight: 300;
+        font-style: italic;
+        color: white;
+        text-align: center; }
 
 /*-----------------------------------------MEDIA QUARY-------------------------------------*/
 @media screen and (max-width: 980px) {
@@ -438,26 +522,13 @@ footer {
     height: 100%;
     padding: 20px; }
   .oferta div {
-    width: 100%; }
-  .flex-contenedor {
-    padding: 20px; }
-  .flex-contenedor .flex-encuentro p {
-    font-size: 25px; } }
-
-@media screen and (max-width: 750px) {
-  .flex-contenedor {
-    flex-direction: column;
-    align-items: center; } }
+    width: 100%; } }
 
 @media screen and (max-width: 700px) {
   main .comienzo div {
     width: 100%; }
   main .objetivo div {
     width: 100%; } }
-
-@media screen and (max-width: 640px) {
-  .envios h2 {
-    font-size: 40px; } }
 
 @media screen and (max-width: 600px) {
   main .portada h2 {
@@ -476,10 +547,6 @@ footer {
   main .objetivo div p {
     font-size: 15px;
     text-align: center; } }
-
-@media screen and (max-width: 520px) {
-  .envios h2 {
-    font-size: 30px; } }
 
 @media screen and (max-width: 500px) {
   header nav ul {
@@ -503,10 +570,6 @@ footer {
   .galeria div {
     grid-row: span 1;
     grid-column: span 1; }
-  .envios .titulo-envios {
-    font-size: 25px; }
-  .flex-contenedor .flex-encuentro p {
-    font-size: 20px; }
   .titulo-contacto {
     font-size: 30px; } }
 
@@ -535,7 +598,3 @@ footer {
     font-size: 40px; }
   main .portada p {
     font-size: 15px; } }
-
-@media screen and (max-width: 390px) {
-  .envios h2 {
-    font-size: 25px; } }
