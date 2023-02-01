@@ -1,4 +1,11 @@
 /*-----------------------------------------MEDIA QUARY-------------------------------------*/
+@media screen and (max-width:1030px){
+    footer .primer-footer{
+    margin: 10px 60px;
+    }
+}
+
+
 @media screen and (max-width:980px) {
     main .comienzo{
         flex-direction: column;
@@ -20,6 +27,9 @@
     .galeria .img10-grid{
         grid-row: span 1;
     }
+    footer .primer-footer{
+        margin: 0px 40px;
+    }
 
 }
 
@@ -32,6 +42,26 @@
     }
     main .productos .productos-overlay{
         width: 80%;
+    }
+    footer .primer-footer .items{
+        margin: 0px;
+    }
+    footer .primer-footer .items h5{
+        font-size: 15px;
+    }
+    footer .primer-footer .items img{
+        width: 40px;
+        height: 40px;
+    }
+    main .envios-contenedor .envios-flex .envios img{
+        width: 60px;
+        height: 60px;
+    }
+    main .envios-contenedor .envios-flex .envios h2{
+        font-size: 15px;
+    }
+    main .envios-contenedor .envios-flex .envios p{
+        font-size: 12px;
     }
 }
 
@@ -54,12 +84,6 @@
     
 }
 @media screen and (max-width:850px) {
-    main .portada h1{
-        font-size: 50px;
-    }
-    main .portada p{
-        font-size: 30px;
-    }
     .oferta{
         flex-direction: column;
         align-items: center;
@@ -71,66 +95,91 @@
         width: 100%;
     }
 }
-
-@media screen and (max-width:700px) {
+@media  screen and (max-width:760px) {
     main .comienzo div{
-        width: 100%;
+        width: 80%;
     }
-    main .objetivo div{
-        width: 100%;
-}
-    }
-
-@media screen and (max-width:600px) {
-    main .portada h2{
-        font-size: 40px; 
-    }
-    main .portada p{
-        font-size: 20px;
-    }
-    main .comienzo div h2{
-        font-size: 60px;
-        text-align: center;
+    main .comienzo div h4{
+        font-size: 50px;
     }
     main .comienzo div p{
         font-size: 15px;
         text-align: center;
     }
-    main .objetivo div h2{
-        font-size: 60px;
-        text-align: center;
+    main .objetivo div{
+        width: 80%;
+    }
+    main .objetivo div h4{
+        font-size: 50px;
     }
     main .objetivo div p{
         font-size: 15px;
         text-align: center;
     }
-
+}
+@media screen and (max-width:730px) {
+    main .envios-contenedor .envios-flex{
+        flex-direction: column;
+    }
+    main .envios-contenedor .envios-flex .envios{
+        width: 65%;
+    }
 }
 
-@media screen and (max-width:500px) {
-    header nav ul{
+@media screen and (max-width:700px) {
+    main .comienzo div{
+        width: 100%;
+        padding: 35px;
+    }
+    main .objetivo div{
+        width: 100%;
+        padding: 35px;
+    }
+    footer .primer-footer .items{
+        display: flex;
         flex-direction: column;
-        text-align: center;
+    }
+}
+
+@media screen and (max-width:580px){
+    main .carusel .carousel.slide .carousel-inner div h2{
+        font-size: 30px;
+    }
+    main .carusel .carousel.slide .carousel-inner div p{
+        font-size: 15px;
+    }
+    footer .primer-footer{
+        flex-direction: column;
+    }
+    footer .primer-footer .items h5{
+        font-size: 20px;
+    }
+    main .comienzo div{
+        padding: 20px;
+    }
+    main .comienzo div h4{
+        font-size: 40px;
+    }
+    main .comienzo div{
+        padding: 20px;
+    }
+    main .objetivo div h4{
+        font-size: 40px;
+    }
     }
 
-    .menu-nav ul li{
-        margin: 5px;
-    }
 
+@media screen and (max-width:500px) {
     header h1{
         font-size: 50px ;
         text-align: center;
     }
-    main .portada h2{
-        font-size: 35px;
-    }
-    main .portada p{
-        font-size: 15px;
-    }
-
-    main .ubicacion h2{
-        font-size: 40px;
+    header nav ul{
+        flex-direction: column;
         text-align: center;
+    }
+    .menu-nav ul li{
+        margin: 5px;
     }
 
     .galeria {
@@ -142,44 +191,77 @@
         grid-row: span 1 ; 
         grid-column: span 1;
     }
-
-    .titulo-contacto{
-        font-size: 30px;
+    main .envios-img img{
+        width: 400px;
+        height: 150px;
     }
 }
 
 @media screen and (max-width:460px) {
-    main .comienzo div h2{
-        font-size: 40px;
-        text-align: center;
+    main .carusel .carousel.slide .carousel-inner div h2{
+        font-size: 25px;
     }
-    main .objetivo div h2{
-        font-size: 40px;
-        text-align: center;
+    main .carusel .carousel.slide .carousel-inner div p{
+        font-size: 10px;
+    }
+    main .comienzo div h4{
+        font-size: 30px;
+    }
+    main .comienzo div p{
+        font-size: 12px;
+    }
+    main .comienzo img{
+        width: 300px;
+    }
+    main .objetivo div h4{
+        font-size: 30px;
+    }
+    main .objetivo div p{
+        font-size: 12px;
+    }
+    main .objetivo img{
+        width: 300px;
     }
 }
+
+
 @media screen and (max-width:400px) {
-    main .ubicacion iframe{
-        width: 100%;
-        align-items: center;
-    }
     main .productos div{
         width: 100%;
         align-items: center;
         text-align: center;
     }
-    footer div{
-        flex-direction: column;
-        align-items: center;
+    main .comienzo div{
+        padding: 0px;
     }
-    footer div img{
-        margin: 0px;
+    main .objetivo div{
+        padding: 0px;
     }
-    main .portada h2{
-        font-size: 40px;
+    footer .segundo-footer{
+        @include flex (flex,space-around,center);
+        flex-direction:column;
     }
-    main .portada p{
-        font-size: 15px;
+    footer .segundo-footer div{
+        margin-top: 15px;
     }
-    
+    main .envios-img img{
+        width: 300px;
+        height: 120px;
+    }
+}
+@media screen and (max-width:380px) {
+    main .carusel .carousel.slide .carousel-inner div h2{
+        font-size: 20px;
+    }
+    main .comienzo img{
+        width: 250px;
+        margin-top: 10px;
+    }
+    main .objetivo img{
+        width: 250px;
+        margin-top: 10px;
+    }
+    main .envios-contenedor h1{
+        font-size: 25px;
+    }
 }
