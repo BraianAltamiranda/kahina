@@ -252,7 +252,7 @@ main .objetivo {
     border: 2px solid #aa1629;
     border-radius: 5px;
     width: 240px;
-    height: 410px;
+    height: 435px;
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -286,6 +286,22 @@ main .objetivo {
       color: #4b4b4b;
       text-align: center;
       font-family: 'Poppins', sans-serif; }
+    .oferta div a {
+      padding: 0px 10px;
+      border: 1px solid #aa1629;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      text-align: center;
+      font-weight: 600;
+      color: black;
+      text-decoration: none;
+      box-shadow: 10px 10px 12px -1px rgba(0, 0, 0, 0.349);
+      -webkit-box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.507);
+      -moz-box-shadow: 10px 10px 12px -1px rgba(0, 0, 0, 0.336); }
+      .oferta div a:hover {
+        background-color: #aa1629;
+        color: white; }
 
 /*-----------------INFORMACION----------------------*/
 main .envios-contenedor h1 {
@@ -364,6 +380,41 @@ main .form-group .col-md-8 {
   main .form-group .col-md-8 img {
     width: 35px;
     height: 35px; }
+
+/*---------------------------------ERROR404-------------------------------*/
+body .error-contenedor {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  body .error-contenedor .img-error img {
+    width: 400px;
+    height: 250px;
+    margin-bottom: 20px; }
+  body .error-contenedor .img-error h1 {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+    text-align: left; }
+  body .error-contenedor .img-error h2 {
+    font-size: 24px;
+    font-weight: 600;
+    font-style: italic;
+    color: black;
+    text-align: left;
+    margin-bottom: 20px; }
+  body .error-contenedor .img-error div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; }
+    body .error-contenedor .img-error div a {
+      font-size: 18px;
+      font-weight: 600;
+      font-style: italic;
+      color: black;
+      text-align: left; }
 
 /*-----------BODY---------------*/
 body {
