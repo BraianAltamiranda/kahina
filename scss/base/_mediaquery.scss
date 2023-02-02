@@ -79,9 +79,30 @@
     .galeria div{
         grid-row: span 1 ; 
         grid-column: span 1;
+    } 
+    body .error-contenedor .img-error img{
+        height: 200px;
     }
-
-    
+    body .error-contenedor .img-error h1{
+        font-size: 20px;
+    }
+    body .error-contenedor .img-error h2{
+        font-size: 20px;
+    }
+}   
+@media screen and (max-width:830px) {
+    body .error-contenedor .img-error img{
+        height: 170px;
+    }
+    body .error-contenedor .img-error h1{
+        font-size: 15px;
+    }
+    body .error-contenedor .img-error h2{
+        font-size: 15px;
+    }
+    body .error-contenedor .img-error div a{
+        font-size: 12px;
+    }
 }
 
 @media  screen and (max-width:760px) {
@@ -104,14 +125,6 @@
     main .objetivo div p{
         font-size: 15px;
         text-align: center;
-    }
-}
-@media screen and (max-width:730px) {
-    main .envios-contenedor .envios-flex{
-        flex-direction: column;
-    }
-    main .envios-contenedor .envios-flex .envios{
-        width: 65%;
     }
 }
 
@@ -155,11 +168,18 @@
     main .objetivo div h4{
         font-size: 40px;
     }
-    }
-@media screen and (max-width:519px) {
+}
+
+@media screen and (max-width:539px) {
     main .oferta div{
-        width: 280px;
-        height: 450px;
+        width: 290px;
+        height: 475px;
+    }
+    body .error-contenedor{
+        padding: 5px;
+    }
+    body .error-contenedor .img-error img{
+        height: 150px;
     }
 }
 
@@ -257,5 +277,17 @@
     }
     main .envios-contenedor h1{
         font-size: 25px;
+    }
+    body .error-contenedor .img-error img{
+        height: 110px;
+    }
+    body .error-contenedor .img-error h1{
+        font-size: 12px;
+    }
+    body .error-contenedor .img-error h2{
+        font-size: 12px;
+    }
+    body .error-contenedor .img-error div a{
+        font-size: 10px;
     }
 }
