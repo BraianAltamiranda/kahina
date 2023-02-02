@@ -83,18 +83,7 @@
 
     
 }
-@media screen and (max-width:850px) {
-    .oferta{
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        height: 100%; 
-        padding: 20px;
-}
-    .oferta div{
-        width: 100%;
-    }
-}
+
 @media  screen and (max-width:760px) {
     main .comienzo div{
         width: 80%;
@@ -167,7 +156,12 @@
         font-size: 40px;
     }
     }
-
+@media screen and (max-width:519px) {
+    main .oferta div{
+        width: 280px;
+        height: 450px;
+    }
+}
 
 @media screen and (max-width:500px) {
     header h1{

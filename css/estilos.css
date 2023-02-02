@@ -23,6 +23,8 @@ header nav {
     font-weight: 600;
     padding-right: 50px;
     color: black; }
+    header nav .container-fluid .navbar-brand span {
+      color: #a82335; }
   header nav .container-fluid #navbarSupportedContent ul li a {
     font-size: 18px;
     font-style: italic;
@@ -117,7 +119,8 @@ main .comienzo {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 30px; }
+  padding: 30px;
+  animation-duration: 2s; }
   main .comienzo div {
     width: 70%;
     padding: 40px;
@@ -152,7 +155,8 @@ main .objetivo {
   justify-content: space-around;
   align-items: center;
   flex-direction: row-reverse;
-  padding: 30px; }
+  padding: 30px;
+  animation-duration: 2s; }
   main .objetivo div {
     width: 70%;
     padding: 40px;
@@ -238,7 +242,8 @@ main .objetivo {
 .oferta {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
   .oferta img {
     width: 100%;
     height: 350px;
@@ -246,8 +251,9 @@ main .objetivo {
   .oferta div {
     border: 2px solid #aa1629;
     border-radius: 5px;
-    width: 100%;
-    margin: 30px;
+    width: 240px;
+    height: 410px;
+    margin: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -504,16 +510,6 @@ footer {
     grid-row: span 1;
     grid-column: span 1; } }
 
-@media screen and (max-width: 850px) {
-  .oferta {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 20px; }
-  .oferta div {
-    width: 100%; } }
-
 @media screen and (max-width: 760px) {
   main .comienzo div {
     width: 80%; }
@@ -564,6 +560,11 @@ footer {
     padding: 20px; }
   main .objetivo div h4 {
     font-size: 40px; } }
+
+@media screen and (max-width: 519px) {
+  main .oferta div {
+    width: 280px;
+    height: 450px; } }
 
 @media screen and (max-width: 500px) {
   header h1 {
